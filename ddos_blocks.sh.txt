@@ -1,0 +1,13 @@
+iptables -A INPUT -p udp -m state --state NEW -m recent --set --name DDOS --rsource 
+iptables -A INPUT -p udp -m state --state NEW -m recent --update --seconds 1 --hitcount 5 --name DDOS --rsource -j DROP
+
+iptables -A INPUT -p udp -m udp --dport 20100:20500 -m state --state NEW -m recent --set --name DEFAULT --rsource 
+iptables -A INPUT -p udp -m udp --dport 20100:20500 -m state --state NEW -m recent --update --seconds 1 --hitcount 10 --name DEFAULT --rsource -j REJECT
+
+uname -a
+
+-A INPUT -p udp -m udp --dport 20100 -m state --state NEW -m recent --set --name DEFAULT --rsource 
+-A INPUT -p udp -m udp --dport 20100 -m state --state NEW -m recent --update --seconds 1 --hitcount 10 --name DEFAULT --rsource -j DROP 
+-A INPUT -p tcp -m tcp --dport 20100 -m state --state NEW -m recent --set --name SSH --rsource 
+-A INPUT -p tcp -m tcp --dport 20100 -m state --state NEW -m recent --update --seconds 1 --hitcount 10 --rttl --name SSH --rsource -j DROP
+
