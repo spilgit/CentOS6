@@ -1,0 +1,175 @@
+    1  find / -name sshd_config
+    2  nano /etc/ssh/sshd_config
+    3  service sshd restart
+    4  nano /etc/hosts.allow
+    5  nano /etc/hosts.deny
+    6  yum install httpd php mysql-server mysql phpMyAdmin
+    7  find / -name httpd.conf
+    8  nano /etc/httpd/conf/httpd.conf
+    9  ls
+   10  yum install wordpress
+   11  ifconfig
+   12  find / -name wordpress.copnf
+   13  find / -name wordpress.conf
+   14  nano /etc/httpd/conf.d/wordpress.conf
+   15  service httpd start
+   16  service mysqld start
+   17  /usr/bin/mysql_secure_installation
+   18  service mysqld start
+   19  mysql -u root -p
+   20  ls
+   21  chkconfig sshd on
+   22  chkconfig httpd on
+   23  chkconfig mysqld on
+   24  find / -name phpMyAdmin.conf
+   25  nano etc/httpd/conf.d/phpMyAdmin.conf
+   26  nano /etc/httpd/conf.d/phpMyAdmin.conf
+   27  service mysqld restart
+   28  find / -name wordpress
+   29  cd /usr/share/
+   30  ls
+   31  cd wordpress
+   32  ls
+   33  nano wp-config.php
+   34  service mysqld restart
+   35  reboot
+   36  ls
+   37  cd /usr/share
+   38  ls
+   39  tar -xvf  wordpress-backup-06252015.tar.gz
+   40  ls
+   41  cd /etc
+   42  nano php.ini
+   43  service httpd restart
+   44  ping spilgit.com
+   45  exit
+   46  ls
+   47  nano /etc/hosts
+   48  ifconfig
+   49  nano /etc/hosts
+   50  nano /etc/sysconfig/network
+   51  ls
+   52  /etc/init.d/network restart
+   53  hostname
+   54  ping spilgit.com
+   55  yum install setuptool -y
+   56  yum install system-config-network* -y
+   57  yum install system-config-firewall* -y
+   58  yum install system-config-securitylevel-tui -y
+   59   yum install system-config-keyboard -y
+   60   yum install ntsysv -y
+   61  yum install git php-common php-mysql php-gd php-intl php-curl
+   62  setup
+   63  reboot
+   64  ls 
+   65  ping www.spilgit.com
+   66  ifconfig
+   67  find -name / httpd.conf
+   68  find / -name httpd.conf
+   69  nano /etc/httpd/conf/httpd.conf
+   70  service httpd restart
+   71  service mysqld status
+   72  yum install git php-common php-mysql php-gd php-intl php-curl
+   73  yum install php-ldap php-apc php-mbstring php-dom php-soap php-xmlrpc
+   74  yum install php
+   75  service httpd restart
+   76  yum -y install mod_perl
+   77  nano  /etc/httpd/conf.d/perl.conf
+   78  setup
+   79  service httpd restart
+   80  service mysqld restart
+   81  ping -c 4 yahoo.ca
+   82  ping -c 4 spilgit.com
+   83  exit
+   84  cd /var/www/html
+   85  ls
+   86  df -h
+   87  cd /
+   88  ls
+   89  find / -name wordpress
+   90  cd /usr/share/wordpress
+   91  ls
+   92  cd wp-admin
+   93  ls
+   94  ls -lha
+   95  who
+   96  users
+   97  last
+   98  nano /etc/hosts.allow
+   99  nano /etc/hostsdeny
+  100  nano /etc/hosts.deny
+  101  setup
+  102  exit
+  103  LS -LHA
+  104  ls -lha
+  105  who
+  106  whoami
+  107  last
+  108  history
+  109  cd /usr/share/wordpress
+  110  exit
+  111  whatis nano
+  112  yum install whatis
+  113  last
+  114  ifconfig
+  115  exit
+  116  find / -name sshd_config
+  117  nano /etc/ssh/sshd_config
+  118  exit
+  119  setup
+  120  last
+  121  pwd
+  122  cd /home
+  123  ls
+  124  find / -name httpd-access.log
+  125  find / -name "httpd-access.log"
+  126  find / -name "httpd*"
+  127  nano /var/log/httpd
+  128  nano /etc/sysconfig/httpd
+  129  nano /etc/httpd/conf/httpd.conf
+  130  find / -name "*.log"
+  131  nano /var/log/mysqld.log
+  132  cd /home
+  133  ls
+  134  nano "wordpress (1).sql"
+  135  cd /usr/share
+  136  cd  wordpress
+  137  ls
+  138  cd ..
+  139  ls
+  140  history
+  141  tar -xvf  wordpress-backup-09152015.tar.gz
+  142  tar -cvzf  wordpress-backup-09152015.tar.gz wordpress
+  143  ls
+  144  ifconfig
+  145  service mysqld start
+  146  chkconfig mysqld on
+  147  cd /home 
+  148  history | cut -c 8- > history09152015.txt
+  149  ls
+  150  exit
+  151  ls -lha
+  152  top
+  153  last
+  154  clear
+  155  cat /etc/redhat-release
+  156  exit
+  157  setup
+  158  ls -lha
+  159  find / -name wordpress
+  160  cd /etc
+  161  df -h
+  162  top
+  163  iptraf
+  164  yum install iptraf
+  165  iptraf
+  166  top
+  167  ho
+  168  who
+  169  last
+  170  cd /home
+  171  ls
+  172  last > lastlog.txt
+  173  nano lastlog.txt
+  174  history
+  175  history > history10012015.txt

@@ -1,0 +1,148 @@
+find / -name sshd_config
+nano /etc/ssh/sshd_config
+service sshd restart
+nano /etc/hosts.allow
+nano /etc/hosts.deny
+yum install httpd php mysql-server mysql phpMyAdmin
+find / -name httpd.conf
+nano /etc/httpd/conf/httpd.conf
+ls
+yum install wordpress
+ifconfig
+find / -name wordpress.copnf
+find / -name wordpress.conf
+nano /etc/httpd/conf.d/wordpress.conf
+service httpd start
+service mysqld start
+/usr/bin/mysql_secure_installation
+service mysqld start
+mysql -u root -p
+ls
+chkconfig sshd on
+chkconfig httpd on
+chkconfig mysqld on
+find / -name phpMyAdmin.conf
+nano etc/httpd/conf.d/phpMyAdmin.conf
+nano /etc/httpd/conf.d/phpMyAdmin.conf
+service mysqld restart
+find / -name wordpress
+cd /usr/share/
+ls
+cd wordpress
+ls
+nano wp-config.php
+service mysqld restart
+reboot
+ls
+cd /usr/share
+ls
+tar -xvf  wordpress-backup-06252015.tar.gz
+ls
+cd /etc
+nano php.ini
+service httpd restart
+ping spilgit.com
+exit
+ls
+nano /etc/hosts
+ifconfig
+nano /etc/hosts
+nano /etc/sysconfig/network
+ls
+/etc/init.d/network restart
+hostname
+ping spilgit.com
+yum install setuptool -y
+yum install system-config-network* -y
+yum install system-config-firewall* -y
+yum install system-config-securitylevel-tui -y
+ yum install system-config-keyboard -y
+ yum install ntsysv -y
+yum install git php-common php-mysql php-gd php-intl php-curl
+setup
+reboot
+ls 
+ping www.spilgit.com
+ifconfig
+find -name / httpd.conf
+find / -name httpd.conf
+nano /etc/httpd/conf/httpd.conf
+service httpd restart
+service mysqld status
+yum install git php-common php-mysql php-gd php-intl php-curl
+yum install php-ldap php-apc php-mbstring php-dom php-soap php-xmlrpc
+yum install php
+service httpd restart
+yum -y install mod_perl
+nano  /etc/httpd/conf.d/perl.conf
+setup
+service httpd restart
+service mysqld restart
+ping -c 4 yahoo.ca
+ping -c 4 spilgit.com
+exit
+cd /var/www/html
+ls
+df -h
+cd /
+ls
+find / -name wordpress
+cd /usr/share/wordpress
+ls
+cd wp-admin
+ls
+ls -lha
+who
+users
+last
+nano /etc/hosts.allow
+nano /etc/hostsdeny
+nano /etc/hosts.deny
+setup
+exit
+LS -LHA
+ls -lha
+who
+whoami
+last
+history
+cd /usr/share/wordpress
+exit
+whatis nano
+yum install whatis
+last
+ifconfig
+exit
+find / -name sshd_config
+nano /etc/ssh/sshd_config
+exit
+setup
+last
+pwd
+cd /home
+ls
+find / -name httpd-access.log
+find / -name "httpd-access.log"
+find / -name "httpd*"
+nano /var/log/httpd
+nano /etc/sysconfig/httpd
+nano /etc/httpd/conf/httpd.conf
+find / -name "*.log"
+nano /var/log/mysqld.log
+cd /home
+ls
+nano "wordpress (1).sql"
+cd /usr/share
+cd  wordpress
+ls
+cd ..
+ls
+history
+tar -xvf  wordpress-backup-09152015.tar.gz
+tar -cvzf  wordpress-backup-09152015.tar.gz wordpress
+ls
+ifconfig
+service mysqld start
+chkconfig mysqld on
+cd /home 
+history | cut -c 8- > history09152015.txt
