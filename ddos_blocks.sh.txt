@@ -1,8 +1,9 @@
 iptables -A INPUT -p udp -m state --state NEW -m recent --set --name DDOS --rsource 
 iptables -A INPUT -p udp -m state --state NEW -m recent --update --seconds 1 --hitcount 5 --name DDOS --rsource -j DROP
-
 iptables -A INPUT -p udp -m udp --dport 20100:20500 -m state --state NEW -m recent --set --name DEFAULT --rsource 
-iptables -A INPUT -p udp -m udp --dport 20100:20500 -m state --state NEW -m recent --update --seconds 1 --hitcount 10 --name DEFAULT --rsource -j REJECT
+iptables -A INPUT -p udp -m udp --dport 20100:20500 -m state --state NEW -m recent --update --seconds 1 --hitcount 10 --name
+
+DEFAULT --rsource -j REJECT
 
 uname -a
 
@@ -11,3 +12,13 @@ uname -a
 -A INPUT -p tcp -m tcp --dport 20100 -m state --state NEW -m recent --set --name SSH --rsource 
 -A INPUT -p tcp -m tcp --dport 20100 -m state --state NEW -m recent --update --seconds 1 --hitcount 10 --rttl --name SSH --rsource -j DROP
 
+#  config rule
+#  option src lan
+#  option src_mac 00:11:22:33:44:55
+#  option src_ip 169.254.0.0/16
+#  option proto all
+#  option target DROP
+
+iptables -I INPUT -p all -m mac --mac-source 00:11:22:33:44:55 -s 169.254.0.0/16 -j DROP
+
+iptables save
