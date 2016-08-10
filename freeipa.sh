@@ -14,3 +14,16 @@ nano /etc/hosts
 ipa-server-install --setup-dns
 # To Un-install
 ipa-server-install --uninstall
+
+# Next steps:
+#        1. You must make sure these network ports are open:
+#                TCP Ports:
+#                  * 80, 443: HTTP/HTTPS
+#                  * 389, 636: LDAP/LDAPS
+#                  * 88, 464: kerberos
+#                  * 53: bind
+#                UDP Ports:
+#                  * 88, 464: kerberos
+#                 * 53: bind
+#                  * 123: ntp
+
