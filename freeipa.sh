@@ -9,7 +9,7 @@ yum install glibc glibc-devel gcc python* libacl-devel krb5-workstation krb5-lib
 nano /etc/hosts
 # 127.0.0.1 localhosts
 # ::1       localhosts
-# IP ADDRESS master.website.com
+# IP ADDRESS website.com
 #
 # To INSTALL
 ipa-server-install --setup-dns
