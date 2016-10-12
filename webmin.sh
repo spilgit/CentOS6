@@ -9,6 +9,7 @@ cd webmin-1.820
 # Log File Directory /var/webmin
 # Full Path to perl /usr/bin/perl
 # Web server port (default 10000)
-
+# Login Name (default admin)
 # Note:  Open Port 10000
-# http://localhost:10000
+# http://website:10000
+
