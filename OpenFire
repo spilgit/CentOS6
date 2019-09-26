@@ -1,3 +1,6 @@
+# “How To Install Chat Server On Centos.” Translated by Kenneth HM Farrow, Open Source Tools Install & Troubleshooting, 
+# http://vinodasuwish.blogspot.com/2015/03/how-to-install-chat-server-on-centos.html.
+
 yum -y install wget java glibc.i686
 
 Download the RPM from this page -or- use this direct link for the RPM. 
