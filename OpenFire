@@ -1,0 +1,81 @@
+yum -y install wget java glibc.i686
+
+Download the RPM from this page -or- use this direct link for the RPM. 
+
+wget http://download.igniterealtime.org/openfire/openfire-3.8.1-1.i386.rpm
+
+Run and install the RPM  
+
+yum -y install ./openfire*rpm 
+
+Once the RPM has been installed, start the openfire service
+
+service openfire start
+
+Ensure that openfire will boot with your server
+
+chkconfig –level 235 openfire on
+
+For this instance, you’ll want to make sure iptables is not running, you can configure the iptables rules how you need them later
+
+service iptables stop 
+
+Install mysql server
+
+yum -y install mysql-server
+
+Start mysql server
+
+/sbin/service mysqld start
+
+Ensure mysql starts when the server does 
+ 
+ /sbin/chkconfig mysqld on
+
+Start the basic mysql secure install
+
+ 
+/usr/bin/mysql_secure_installation
+
+hit “enter” to give no password
+generate and save a new root password
+hit “enter” aka “Y” on the rest of the questions
+
+
+Restart mysql server
+
+/sbin/service mysqld restart
+
+Login to mysql as root (use the new root password you just entered)
+
+/usr/bin/mysql -u root -p
+
+Create database
+
+CREATE DATABASE openfire;
+
+
+Create user (update *username* and *securepassword* below)
+
+INSERT INTO mysql.user (User,Host,Password) VALUES(‘username’,’127.0.0.1′,PASSWORD(‘securepassword’));
+
+Save your changes
+
+FLUSH PRIVILEGES;
+
+Give the user access to the database
+
+GRANT ALL PRIVILEGES ON openfire.* to openfire@127.0.0.1; 
+
+Save your changes
+
+FLUSH PRIVILEGES;
+
+Exit mysql 
+
+exit
+
+Navigate in your browser to
+
+http://yourdomain.com:9090
+http://yourip:9090  
